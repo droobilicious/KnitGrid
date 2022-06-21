@@ -1,0 +1,55 @@
+
+/* Global Styles & Colors */
+:root {
+    --color-header-background: #121212;
+    --color-header-text: white;
+    --color-header-hightlight: #1d7e05;
+    --color-background: white;
+    --color-footer-background: #121212;
+    --color-footer-text: white;
+    
+
+  }
+
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    background-color: var(--color-background);
+    overflow-y: hidden; /* Prevent scrollbar appearing on page transition */
+
+
+  }
+
+
+
+  #root {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+  }
+
+
+  .grid {
+    display: inline-grid;
+    border:solid 2px blue;
+    /*transform: rotate(20deg);*/
+
+
+  }
+
+  .block {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width:20px;
+    height:20px;
+  }
