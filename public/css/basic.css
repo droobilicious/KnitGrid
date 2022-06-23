@@ -31,25 +31,75 @@
 
   #root {
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center; /* cross axis */
+
     height:100%;
   }
 
 
-  .grid {
-    display: inline-grid;
-    border:solid 2px blue;
-    /*transform: rotate(20deg);*/
+  #root > div {
+   /* border:solid 1px red;*/
+    flex:1 1 0px;
+  }
+
+  #menu {
+    flex:none;
+    width:3rem;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content:center;
+  }
+
+  #colourSelector {
+    display:flex;
+    flex-direction: column;
+    width:3rem;
+    height:10rem;
+    border:solid 2px black;
 
 
   }
 
-  .block {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    text-align: center;
-    width:20px;
-    height:20px;
+  .colour{
+    flex:1 1 0px;
+  }
+
+  #selectedColour {
+    margin:1rem;
+    border:solid 2px black;
+    width:3rem;
+    height:3rem;
+  }
+
+
+
+  .grid {
+    margin:0.5rem;
+    border:solid 2px blue;
+    background-color:grey;
+
+
+  }
+
+  #grid1 {
+    width:500px;
+    height:500px;
+  }
+
+  #grid2 {
+    width:100px;
+    height:100px;
+  }
+
+
+ 
+  .btnProcess {
+    margin:1rem;
+
+    padding:0.5rem 1rem;
+    text-transform: uppercase;
   }
