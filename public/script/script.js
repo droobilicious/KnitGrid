@@ -93,7 +93,12 @@ $(document).ready(function(){
     const grid1 = new KnitGrid(20, 20, '#grid1' );
 
     $( '.btnProcess' ).click(function(){
-       // do something
+        
+        let currentData = grid1.getInfo();
+        console.log("currentData: ", JSON.stringify(currentData));
+     
+        // do something
+
     })
 
 
